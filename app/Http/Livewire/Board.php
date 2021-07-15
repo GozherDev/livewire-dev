@@ -10,4 +10,9 @@ class Board extends Component
     {
         return view('livewire.board');
     }
+
+    public function example()
+    {
+        dd('dfdf');
+    }
 }

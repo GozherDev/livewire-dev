@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//use App\Http\Livewire\Board;
+use App\Http\Livewire\Checks\IndexChecks;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +25,4 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-//Route::middleware(['auth:sanctum', 'verified'])->get('/users', ::class)->name('register.users');
+Route::get('/checks', IndexChecks::class)->name('checks');
